@@ -46,5 +46,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UrlShortener.Controllers.UrlShortenerController",
+    "Method": "Delete",
+    "RelativePath": "{url}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "url",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

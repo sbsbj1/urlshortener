@@ -1,0 +1,24 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.resharper
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.pdb
+*.exe
+*.dll
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Rider IDE files (if you use Rider)
+.idea/
+
+# Other common .NET ignores
+bin/
+obj/

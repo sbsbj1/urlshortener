@@ -76,6 +76,28 @@
           }
         }
       }
+    },
+    "/{url}": {
+      "delete": {
+        "tags": [
+          "UrlShortener"
+        ],
+        "parameters": [
+          {
+            "name": "url",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

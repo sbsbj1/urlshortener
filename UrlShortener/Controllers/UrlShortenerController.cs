@@ -22,7 +22,7 @@ namespace UrlShortener.Controllers
 
         public class LongUrlRequest
         {
-            public string LongUrl{ get; set; }
+            public string LongUrl { get; set; }
         }
 
 
@@ -31,19 +31,19 @@ namespace UrlShortener.Controllers
         public async Task<IActionResult> PostShortenUrl([FromBody] UrlDto url)
         {
 
-            if(url.Url == null)
+            if (url.Url == null)
             {
                 return BadRequest("La Url Original: LongUrl es obligatoria.");
             }
-           
+
             var existing = _DbContext.Urls.FirstOrDefault(u => u.LongUrl == url.Url);
             if (existing != null)
             {
-                
-                return Conflict(new { message = "Request has already been processed.", item =  existing });
+
+                return Conflict(new { message = "Request has already been processed.", item = existing });
             }
 
-           var model = await _UrlRepository.ShortenUrl(url.Url);
+            var model = await _UrlRepository.ShortenUrl(url.Url);
 
             return CreatedAtAction(nameof(GetUrlItem), new { Key = model.Key }, model);
         }
@@ -53,7 +53,7 @@ namespace UrlShortener.Controllers
         public async Task<IActionResult> GetUrlItem(string key)
         {
             var urlItem = await _UrlRepository.GetByKey(key);
-            if(urlItem == null)
+            if (urlItem == null)
             {
                 return NotFound();
             }
@@ -64,19 +64,37 @@ namespace UrlShortener.Controllers
         [HttpGet("{key}")]
         public async Task<IActionResult> Redirect(string key)
         {
-            Console.WriteLine($"FIRST {key}");
+            //Console.WriteLine($"FIRST {key}");
             var fullShortUrl = $"https://localhost7188/{key}";
-            Console.WriteLine($" SECOND{fullShortUrl}");
+            //Console.WriteLine($" SECOND{fullShortUrl}");
             var dbModel = _DbContext.Urls.SingleOrDefault(db => db.Key == key);
-            if(dbModel != null)
+            if (dbModel != null)
             {
-                Console.WriteLine($"Se encontro la url : {dbModel.LongUrl}");
-                return  base.Redirect(dbModel.LongUrl);
-                
+                // Console.WriteLine($"Se encontro la url : {dbModel.LongUrl}");
+                return base.Redirect(dbModel.LongUrl);
+
             }
             return NotFound();
 
-            
+
+        }
+
+        //:DELETE
+        [HttpDelete("{key}")]
+        public async Task<IActionResult> Delete(string key)
+        {
+
+           
+            var fullShortUrl = $"https://localhost7188/{key}";
+           
+            var dbShortUrl = _DbContext.Urls.SingleOrDefault(db => db.ShortUrl == fullShortUrl);
+            if(dbShortUrl != null)
+            {
+                _DbContext.Urls.Remove(dbShortUrl);
+                _DbContext.SaveChanges();
+            }
+            return NotFound("Url doesn't exist");
+
         }
 
     }
