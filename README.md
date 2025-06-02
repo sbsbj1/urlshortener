@@ -9,5 +9,5 @@ The process that I have been doing are:
 
 ---
 ## Future things to do
-- [ ] Can delete the shortened url
+-  [x] Can delete the shortened url
 - [ ] GUI
