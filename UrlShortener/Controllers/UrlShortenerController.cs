@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using UrlShortener.Interfaces;
 using UrlShortener.Model;
 using UrlShortener.Repository;
@@ -11,19 +12,15 @@ namespace UrlShortener.Controllers
     public class UrlShortenerController : Controller
     {
 
-        private readonly IUrl _UrlRepository;
-        private readonly UrlContext _DbContext;
+        private readonly IUrlService _urlService;
+       
 
-        public UrlShortenerController(IUrl urlRepository, UrlContext urlContext)
+        public UrlShortenerController(IUrlService urlService )
         {
-            _UrlRepository = urlRepository;
-            _DbContext = urlContext;
+
+            _urlService = urlService;
         }
 
-        public class LongUrlRequest
-        {
-            public string LongUrl { get; set; }
-        }
 
 
         //:POST
@@ -36,14 +33,9 @@ namespace UrlShortener.Controllers
                 return BadRequest("La Url Original: LongUrl es obligatoria.");
             }
 
-            var existing = _DbContext.Urls.FirstOrDefault(u => u.LongUrl == url.Url);
-            if (existing != null)
-            {
 
-                return Conflict(new { message = "Request has already been processed.", item = existing });
-            }
 
-            var model = await _UrlRepository.ShortenUrl(url.Url);
+            var model = await _urlService.ShortenUrl(url.Url);
 
             return CreatedAtAction(nameof(GetUrlItem), new { Key = model.Key }, model);
         }
@@ -52,7 +44,7 @@ namespace UrlShortener.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUrlItem(string key)
         {
-            var urlItem = await _UrlRepository.GetByKey(key);
+            var urlItem =  await _urlService.GetUrl(key);
             if (urlItem == null)
             {
                 return NotFound();
@@ -64,19 +56,15 @@ namespace UrlShortener.Controllers
         [HttpGet("{key}")]
         public async Task<IActionResult> Redirect(string key)
         {
-            //Console.WriteLine($"FIRST {key}");
-            var fullShortUrl = $"https://localhost7188/{key}";
-            //Console.WriteLine($" SECOND{fullShortUrl}");
-            var dbModel = _DbContext.Urls.SingleOrDefault(db => db.Key == key);
+            
+            var dbModel = await _urlService.GetUrl(key);
             if (dbModel != null)
             {
-                // Console.WriteLine($"Se encontro la url : {dbModel.LongUrl}");
+                
                 return base.Redirect(dbModel.LongUrl);
 
             }
             return NotFound();
-
-
         }
 
         //:DELETE
@@ -84,14 +72,11 @@ namespace UrlShortener.Controllers
         public async Task<IActionResult> Delete(string key)
         {
 
-           
-            var fullShortUrl = $"https://localhost7188/{key}";
-           
-            var dbShortUrl = _DbContext.Urls.SingleOrDefault(db => db.ShortUrl == fullShortUrl);
+            var dbShortUrl = await _urlService.GetUrl(key);
             if(dbShortUrl != null)
             {
-                _DbContext.Urls.Remove(dbShortUrl);
-                _DbContext.SaveChanges();
+                await _urlService.DeleteUrl(key);
+                return Ok("Url deleted");
             }
             return NotFound("Url doesn't exist");
 

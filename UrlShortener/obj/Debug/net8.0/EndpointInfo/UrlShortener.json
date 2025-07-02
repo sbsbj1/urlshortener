@@ -75,16 +75,14 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/{url}": {
+      },
       "delete": {
         "tags": [
           "UrlShortener"
         ],
         "parameters": [
           {
-            "name": "url",
+            "name": "key",
             "in": "path",
             "required": true,
             "schema": {

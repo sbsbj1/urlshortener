@@ -5164,11 +5164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Villa\\OneDrive\\Documentos\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
+      "projectUniqueName": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
       "projectName": "UrlShortener",
-      "projectPath": "C:\\Users\\Villa\\OneDrive\\Documentos\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
+      "projectPath": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
       "packagesPath": "C:\\Users\\Villa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Villa\\OneDrive\\Documentos\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\obj\\",
+      "outputPath": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

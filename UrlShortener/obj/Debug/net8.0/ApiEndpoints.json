@@ -50,13 +50,13 @@
   {
     "ContainingType": "UrlShortener.Controllers.UrlShortenerController",
     "Method": "Delete",
-    "RelativePath": "{url}",
+    "RelativePath": "{key}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "url",
+        "Name": "key",
         "Type": "System.String",
         "IsRequired": true
       }
