@@ -34,7 +34,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/get/{key}": {
       "get": {
         "tags": [
           "UrlShortener"
@@ -42,7 +44,8 @@
         "parameters": [
           {
             "name": "key",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }

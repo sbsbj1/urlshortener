@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj": {}
+    "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\UrlShortener.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj": {
+    "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\UrlShortener.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
+        "projectUniqueName": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
         "projectName": "UrlShortener",
-        "projectPath": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
+        "projectPath": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\UrlShortener.csproj",
         "packagesPath": "C:\\Users\\Villa\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\EstudiarC#\\UrlShortener\\UrlShortener\\obj\\",
+        "outputPath": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

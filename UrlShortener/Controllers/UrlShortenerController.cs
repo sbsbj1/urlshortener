@@ -41,7 +41,7 @@ namespace UrlShortener.Controllers
         }
 
         //:GET
-        [HttpGet]
+        [HttpGet("get/{key}")]
         public async Task<IActionResult> GetUrlItem(string key)
         {
             var urlItem =  await _urlService.GetUrl(key);

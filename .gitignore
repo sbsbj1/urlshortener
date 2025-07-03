@@ -22,3 +22,5 @@ packages/
 # Other common .NET ignores
 bin/
 obj/
+
+.env

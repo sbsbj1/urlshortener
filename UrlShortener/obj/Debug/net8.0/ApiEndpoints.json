@@ -17,22 +17,6 @@
   },
   {
     "ContainingType": "UrlShortener.Controllers.UrlShortenerController",
-    "Method": "GetUrlItem",
-    "RelativePath": "",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "key",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UrlShortener.Controllers.UrlShortenerController",
     "Method": "Redirect",
     "RelativePath": "{key}",
     "HttpMethod": "GET",
@@ -52,6 +36,22 @@
     "Method": "Delete",
     "RelativePath": "{key}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UrlShortener.Controllers.UrlShortenerController",
+    "Method": "GetUrlItem",
+    "RelativePath": "get/{key}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

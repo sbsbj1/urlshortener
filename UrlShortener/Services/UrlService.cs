@@ -53,7 +53,7 @@ namespace UrlShortener.Services
                  .Replace('/', '-')
                  .TrimEnd('=');
 
-            string shortUrl = $"https://localhost7188/{hashedDataToBase64}";
+            string shortUrl = $"https://localhost:7188/{hashedDataToBase64}";
 
 
             var urlModel = new UrlModel
