@@ -6,6 +6,6 @@
 
         public string HashPassword(string password);
 
-        public bool ComparePassword();
+        public bool ComparePassword(string password, string hashString);
     }
 }
