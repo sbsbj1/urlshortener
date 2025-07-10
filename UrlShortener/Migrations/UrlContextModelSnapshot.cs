@@ -16,7 +16,7 @@ namespace UrlShortener.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.5")
+                .HasAnnotation("ProductVersion", "9.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -38,9 +38,63 @@ namespace UrlShortener.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Key");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Urls");
+                });
+
+            modelBuilder.Entity("UrlShortener.Model.User", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("confirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("email")
+                        .IsUnique();
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("UrlShortener.Model.UrlModel", b =>
+                {
+                    b.HasOne("UrlShortener.Model.User", "User")
+                        .WithMany("UrlModels")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("UrlShortener.Model.User", b =>
+                {
+                    b.Navigation("UrlModels");
                 });
 #pragma warning restore 612, 618
         }

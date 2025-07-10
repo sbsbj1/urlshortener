@@ -1,24 +1,109 @@
-# Visual Studio files
+# Visual Studio
 .vs/
-*.suo
+*.sln.docstates
 *.user
-*.resharper
+*.suo
+*.opensdf
+*.VC.db
+*.sdf
+*.vssscc
+*.vspscc
+*.local
+*.esproj.user
 
 # Build results
+[Bb]in/
+[Oo]bj/
 [Dd]ebug/
 [Rr]elease/
-*.obj
-*.pdb
 *.exe
 *.dll
+*.pdb
+*.tmp
+*.log
+*.bak
+*.old
+*.obj
+*.out
+*.exe.config
 
 # NuGet packages
 packages/
 *.nupkg
+*.snupkg
+*.props
 
-# Rider IDE files (if you use Rider)
+# Editor-specific
+.vscode/
 .idea/
 
-# Other common .NET ignores
-bin/
-obj/
+# Dotnet / C# specific
+[Tt]emp/
+[Tt]mp/
+.DS_Store
+Thumbs.db
+
+## Rider files
+.idea/
+
+## User-specific files
+*.user
+*.userprefs
+
+## Visual Studio's Solution User Options file
+*.suo
+
+## VS Code settings directory
+.vscode/
+
+## Visual Studio code coverage results
+*.coverage
+*.resfiles
+*.dbmdl
+*.cache
+*.vsix
+*.vsixmanifest
+*.vsz
+*.vsext
+*.datasource
+
+## NuGet packages
+packages/
+
+# Project files
+*.designer.cs
+*.resx.designer
+*.diagram
+*.filters
+*.pidb
+*.FileListAbsolute.txt
+
+## Test results
+TestResults/
+*.trx
+*.testrunconfig
+
+## Intermediate files
+*.intellisense.cache
+
+## Publishing/Deployment
+publish/
+.publish/
+
+# Log files
+*.log
+
+# Other OS files
+.DS_Store
+Thumbs.db
+
+# --- ASP.NET Core ---
+**/bin/
+**/obj/
+secrets.json
+
+# --- React Frontend (urlshortener-client) ---
+urlshortener-client/node_modules/
+urlshortener-client/.env 
+urlshortener-client/build/ 
+urlshortener-client/dist/ 

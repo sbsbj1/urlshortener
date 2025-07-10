@@ -10,5 +10,7 @@ namespace UrlShortener.Model
         public string ShortUrl { get; set; } //protocol+encodedUrl
 
         public string IdempotencyKey { get; set; }
+        public string UserId { get; set; }
+        public User User { get; set; } = null!;
     }
 }

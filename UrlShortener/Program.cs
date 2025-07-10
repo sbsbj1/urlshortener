@@ -5,6 +5,9 @@ using UrlShortener.Repository;
 using UrlShortener.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddJsonFile("secrets.json",
+    optional: true,
+    reloadOnChange: true);
 
 // Add services to the container.
 
@@ -12,6 +15,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUrlRepository, UrlRepositoryEF>();
 builder.Services.AddScoped<IUrlService, UrlService>();
 
@@ -20,6 +24,8 @@ builder.Services.AddDbContext<UrlContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+var key = builder.Configuration.GetSection("SecretKey").Value;
 
 var app = builder.Build();
 
