@@ -2,7 +2,9 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Cryptography;
 using System.Text;
+using UrlShortener.DTOs;
 using UrlShortener.Interfaces;
+using UrlShortener.Model;
 
 namespace UrlShortener.Services
 {
@@ -17,12 +19,12 @@ namespace UrlShortener.Services
 
 
 
-        private readonly IUrlRepository _urlRepository;
+        private readonly IUserRepository _userRepository;
         public IConfiguration _configuration;
 
-        public AuthService(IUrlRepository urlRepository, IConfiguration configuration)
+        public AuthService(IUserRepository userRepository, IConfiguration configuration)
         {
-            _urlRepository = urlRepository;
+            _userRepository = userRepository;
             _configuration = configuration;
         }
 
@@ -72,6 +74,33 @@ namespace UrlShortener.Services
                 );
 
             return string.Join(segmentDelimiter, Convert.ToHexString(hash), Convert.ToHexString(salt), _iterations, _algorithm);
+        }
+
+        public async Task<User?> GetUserByEmail(string email)
+        {
+            return await _userRepository.GetUser(email);
+        }
+
+        public async Task<User> CreateUser(UserRegisterDTO userDto)
+        {
+            var rand = new Random();
+            var password = HashPassword(userDto.Password);
+            var token = Math.Floor(100000 + rand.NextDouble() * 900000).ToString();
+
+
+            var newUser = new User
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = userDto.Name,
+                Email = userDto.Email,
+                Password = password,
+                Token = token,
+                Confirmed = false,
+                UrlModels = new List<UrlModel>()
+            };
+
+            await _userRepository.Add(newUser);
+            return newUser;
         }
     }
 }

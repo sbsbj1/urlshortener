@@ -1,25 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace UrlShortener.Model
+namespace UrlShortener.DTOs
 {
-
-    public class User
+    public class UserRegisterDTO
     {
-        [Key]
-        public string Id { get; set; }
+
         [Required]
         public string Name { get; set; }
 
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
         [Required]
         public string Password { get; set; }
-        public string Token { get; set; }
-        public bool Confirmed { get; set; }
-        public ICollection<UrlModel> UrlModels { get; set; }
-
-        
-
     }
 }

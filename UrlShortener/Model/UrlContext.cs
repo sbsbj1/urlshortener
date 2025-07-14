@@ -15,7 +15,7 @@ namespace UrlShortener.Model
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
-                .HasIndex(u => u.email)
+                .HasIndex(u => u.Email)
                 .IsUnique();
 
 

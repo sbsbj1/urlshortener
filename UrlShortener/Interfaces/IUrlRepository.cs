@@ -12,5 +12,9 @@ namespace UrlShortener.Interfaces
 
         public Task Delete(string key);
 
+
+
+
+
     }
 }

@@ -165,3 +165,5 @@ D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\obj\Debug\net8.0\refint\Ur
 D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\obj\Debug\net8.0\UrlShortener.pdb
 D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\obj\Debug\net8.0\UrlShortener.genruntimeconfig.cache
 D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\obj\Debug\net8.0\ref\UrlShortener.dll
+D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\workspace\EstudiarCsharp\UrlShortener\UrlShortener\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

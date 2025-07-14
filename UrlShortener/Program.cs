@@ -16,8 +16,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserRepository, UserRepositoryEF>();
 builder.Services.AddScoped<IUrlRepository, UrlRepositoryEF>();
 builder.Services.AddScoped<IUrlService, UrlService>();
+
+
 
 
 builder.Services.AddDbContext<UrlContext>(options =>
