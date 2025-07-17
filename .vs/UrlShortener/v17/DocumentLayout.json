@@ -3,60 +3,32 @@
   "WorkspaceRootPath": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\model\\urlmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\model\\urlmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\controllers\\urlshortenercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\controllers\\urlshortenercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\repository\\userrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\repository\\userrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\services\\urlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\services\\urlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\repository\\urlrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\repository\\urlrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\repository\\userrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\repository\\userrepositoryef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\model\\urlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\model\\urlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|d:\\workspace\\estudiarcsharp\\urlshortener\\urlshortener\\interfaces\\iurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA4DCB08-8BF9-4D80-AB8A-AC95925CDA0D}|UrlShortener\\UrlShortener.csproj|solutionrelative:urlshortener\\interfaces\\iurlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,110 +38,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 241,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UrlModel.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\UrlModel.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Model\\UrlModel.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\UrlModel.cs",
-              "RelativeToolTip": "UrlShortener\\Model\\UrlModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T20:04:22.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Program.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Program.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Program.cs",
-              "RelativeToolTip": "UrlShortener\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T03:54:03.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Interfaces\\IAuthService.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "UrlShortener\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T17:48:16.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "UrlShortener\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T17:23:43.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "UrlShortener\\Services\\AuthService.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Services\\AuthService.cs",
-              "RelativeToolTip": "UrlShortener\\Services\\AuthService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAiwFwAAAAvAAAAAAAAAA==",
+              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Services\\AuthService.cs*",
+              "RelativeToolTip": "UrlShortener\\Services\\AuthService.cs*",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAswHYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T18:37:05.807Z",
+              "WhenOpened": "2025-07-14T21:58:07.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "UrlShortener\\Interfaces\\IUserRepository.cs",
               "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "UrlShortener\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T17:59:48.807Z"
+              "WhenOpened": "2025-07-14T23:22:33.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UrlShortener\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UrlShortener\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:58:41.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserRepositoryEF.cs",
               "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Repository\\UserRepositoryEF.cs",
               "RelativeDocumentMoniker": "UrlShortener\\Repository\\UserRepositoryEF.cs",
               "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Repository\\UserRepositoryEF.cs",
               "RelativeToolTip": "UrlShortener\\Repository\\UserRepositoryEF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T18:00:35.016Z"
+              "WhenOpened": "2025-07-14T23:26:59.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UrlContext.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\UrlContext.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Model\\UrlContext.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\UrlContext.cs",
-              "RelativeToolTip": "UrlShortener\\Model\\UrlContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "UrlShortener\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "UrlShortener\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T03:46:19.682Z"
+              "WhenOpened": "2025-07-14T22:45:19.444Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\DTOs\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "UrlShortener\\DTOs\\UserLoginDTO.cs",
+              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\DTOs\\UserLoginDTO.cs",
+              "RelativeToolTip": "UrlShortener\\DTOs\\UserLoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:54:47.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UserRegisterDTO.cs",
               "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\DTOs\\UserRegisterDTO.cs",
               "RelativeDocumentMoniker": "UrlShortener\\DTOs\\UserRegisterDTO.cs",
@@ -178,74 +126,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T17:38:15.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUrlService.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IUrlService.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Interfaces\\IUrlService.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Interfaces\\IUrlService.cs",
-              "RelativeToolTip": "UrlShortener\\Interfaces\\IUrlService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T17:37:32.039Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 159,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UrlShortenerController.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\UrlShortenerController.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Controllers\\UrlShortenerController.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Controllers\\UrlShortenerController.cs",
-              "RelativeToolTip": "UrlShortener\\Controllers\\UrlShortenerController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwC8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T17:23:45.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UrlService.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Services\\UrlService.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Services\\UrlService.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Services\\UrlService.cs",
-              "RelativeToolTip": "UrlShortener\\Services\\UrlService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwEAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T18:38:27.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\User.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Model\\User.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Model\\User.cs",
-              "RelativeToolTip": "UrlShortener\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T18:40:05.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UrlRepositoryEF.cs",
-              "DocumentMoniker": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Repository\\UrlRepositoryEF.cs",
-              "RelativeDocumentMoniker": "UrlShortener\\Repository\\UrlRepositoryEF.cs",
-              "ToolTip": "D:\\workspace\\EstudiarCsharp\\UrlShortener\\UrlShortener\\Repository\\UrlRepositoryEF.cs",
-              "RelativeToolTip": "UrlShortener\\Repository\\UrlRepositoryEF.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T19:35:57.504Z"
             }
           ]
         }

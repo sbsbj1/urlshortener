@@ -1,4 +1,6 @@
-﻿using UrlShortener.DTOs;
+﻿using Microsoft.Extensions.Primitives;
+using Microsoft.Identity.Client;
+using UrlShortener.DTOs;
 using UrlShortener.Model;
 
 namespace UrlShortener.Interfaces
@@ -13,7 +15,11 @@ namespace UrlShortener.Interfaces
 
         Task<User> CreateUser(UserRegisterDTO userDto);
 
+        Task<(string? token, string? errorMessage)> Login(UserLoginDTO userDto);
+
         public Task<User?> GetUserByEmail(string email);
+
+        public Task<bool> ConfirmAccount(string token);
 
     }
 }

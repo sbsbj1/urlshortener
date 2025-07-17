@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Cryptography;
 using System.Text;
@@ -101,6 +102,33 @@ namespace UrlShortener.Services
 
             await _userRepository.Add(newUser);
             return newUser;
+        }
+
+        public async Task<(string? token, string? errorMessage)> Login(UserLoginDTO userDto)
+        {
+            var userExists = await GetUserByEmail(userDto.Email);
+            if (userExists == null) return (null, "One or two parameters invalid");
+            var passwordValid =  ComparePassword(userDto.Password, userExists.Password);
+            if (!passwordValid) return (null, "One or two parameters invalid");
+
+            if (!userExists.Confirmed) return (null, "Please, confirm your account");
+
+
+            var token = CreateToken();
+
+            return (token, null);
+        }
+
+        public async Task<bool> ConfirmAccount(string token)
+        {
+            var user = await _userRepository.GetToken(token);   
+            if(user == null)
+            {
+                return false;
+            }
+            user.Confirmed = true;
+            await _userRepository.Update(user);
+            return true;
         }
     }
 }

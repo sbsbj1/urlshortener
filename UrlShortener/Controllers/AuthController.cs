@@ -38,10 +38,36 @@ namespace UrlShortener.Controllers
                 return StatusCode(201, new { message = "User created succefully!" });
             }
             catch(Exception ex)
-            {
-                Console.WriteLine($"❌ Error en CreateUser: {ex.Message}");
-                return StatusCode(500, new { error = $"An error has occurred: {ex.Message}" });
+            {        
+                return StatusCode(500, new { error ="An error has occurred" });
             }
+        }
+
+
+        //CONFIRM ACCOUNT
+        [HttpPost("confirm-account")]
+        public async Task<IActionResult> ConfirmAccount([FromBody] string token)
+        {
+            var isConfirmed = await _authService.ConfirmAccount(token);
+            if (!isConfirmed)
+            {
+                return StatusCode(401, new { error = "Token is not valid" });
+            }
+            return Ok(new { message = "Account confirmed" });
+        }
+
+        //LOGIN 
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(UserLoginDTO userLogin)
+        {
+            var user = await _authService.Login(userLogin);
+            if (user.errorMessage != null)
+            {
+                return StatusCode(500, new { error = $"{user.errorMessage}" });
+            }
+            return Ok(new { message = $"Login Successful, {user.token}" });
+            
+
         }
     }
 }
