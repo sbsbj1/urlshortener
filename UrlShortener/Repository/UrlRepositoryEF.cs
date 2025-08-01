@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
@@ -34,6 +35,14 @@ namespace UrlShortener.Repository
                 _context.Urls.Remove(url);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<List<UrlModel?>> GetAllUrl(string userId)
+        {
+            var urls = await _context.Urls
+                .Where(u => u.UserId == userId)
+                .Include(u => u.User).ToListAsync();
+            return urls;
         }
 
         public async Task<UrlModel?> GetByKey(string key)

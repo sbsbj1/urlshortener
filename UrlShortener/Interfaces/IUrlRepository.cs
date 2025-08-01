@@ -12,6 +12,8 @@ namespace UrlShortener.Interfaces
 
         public Task Delete(string key);
 
+        public Task<List<UrlModel?>> GetAllUrl(string userId);
+
 
 
 

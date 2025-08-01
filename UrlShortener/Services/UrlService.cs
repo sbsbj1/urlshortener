@@ -1,31 +1,44 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using UrlShortener.Interfaces;
 using UrlShortener.Model;
+using UrlShortener.Repository;
 
 namespace UrlShortener.Services
 {
     public class UrlService : IUrlService
     {
         private readonly IUrlRepository _urlRepository;
+        private readonly IUserRepository _userRepository;
 
 
-        public UrlService(IUrlRepository urlRepository)
+        public UrlService(IUrlRepository urlRepository, IUserRepository userRepository)
         {
             _urlRepository = urlRepository;
+            _userRepository = userRepository;
         }
 
-        public async Task DeleteUrl(string key)
+        public async Task<bool> DeleteUrl(string key, string userId)
         {
-            var url = await _urlRepository.GetByKey(key);
-            if (url != null) 
+            var user = await _userRepository.GetUserById(userId);
+            if(user == null)
             {
-                await _urlRepository.Delete(key);
+                return false;
             }
+            var url = await _urlRepository.GetByKey(key);
+            if (url == null) 
+            {
+                return false;
+            }
+            await _urlRepository.Delete(key);
+            return true;
         }
 
         public async Task<UrlModel?> GetUrl(string key)
         {
+
+
             return await _urlRepository.GetByKey(key);
         }
 
@@ -85,6 +98,16 @@ namespace UrlShortener.Services
             Console.WriteLine(encodedUrl);
             */
 
+        }
+
+        public async Task<List<UrlModel?>> GetAllUrlById(string userId)
+        {
+            var user = await _userRepository.GetUserById(userId);
+            if(user == null)
+            {
+                return null;
+            }
+            return await _urlRepository.GetAllUrl(userId);
         }
 
 

@@ -3,6 +3,7 @@ using UrlShortener.Interfaces;
 using UrlShortener.Model;
 using UrlShortener.Repository;
 using UrlShortener.Services;
+using UrlShortener.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("secrets.json",
@@ -19,7 +20,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepositoryEF>();
 builder.Services.AddScoped<IUrlRepository, UrlRepositoryEF>();
 builder.Services.AddScoped<IUrlService, UrlService>();
-
+builder.Services.AddAuthExtension(builder.Configuration);
 
 
 
@@ -41,7 +42,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllers();
 

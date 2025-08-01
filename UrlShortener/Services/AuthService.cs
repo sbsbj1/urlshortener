@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using UrlShortener.DTOs;
@@ -47,17 +48,28 @@ namespace UrlShortener.Services
             return CryptographicOperations.FixedTimeEquals(inputHash, hash);
         }
 
-        public string CreateToken()
+        public string CreateToken(User user)
         {
             var secretKey = _configuration["SecretKey"];
 
             byte[] bytes = Encoding.ASCII.GetBytes(secretKey);
+
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
             SigningCredentials signingCredentials = new SigningCredentials(new SymmetricSecurityKey(bytes), SecurityAlgorithms.HmacSha256Signature);
             SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
                 {
+                    Subject = new ClaimsIdentity(claims),
                     Expires = DateTime.UtcNow.AddDays(31),
-                    SigningCredentials = signingCredentials
-                };
+                    SigningCredentials = signingCredentials,
+                    Issuer = "https://localhost:7188",
+                    Audience = "https://localhost:7188"
+                    
+            };
             JwtSecurityTokenHandler jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
             var token = jwtSecurityTokenHandler.CreateToken(tokenDescriptor);
             return jwtSecurityTokenHandler.WriteToken(token);
@@ -114,7 +126,7 @@ namespace UrlShortener.Services
             if (!userExists.Confirmed) return (null, "Please, confirm your account");
 
 
-            var token = CreateToken();
+            var token = CreateToken(userExists);
 
             return (token, null);
         }

@@ -7,7 +7,7 @@ namespace UrlShortener.Interfaces
 {
     public interface IAuthService
     {
-        public string CreateToken();
+        public string CreateToken(User user);
 
         public string HashPassword(string password);
 

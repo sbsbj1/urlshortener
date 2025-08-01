@@ -34,6 +34,11 @@ namespace UrlShortener.Repository
             return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
 
+        public async Task<User> GetUserById(string id)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        }
+
         public async Task Update(User user)
         {
             _context.Users.Update(user);

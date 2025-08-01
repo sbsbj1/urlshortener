@@ -1,4 +1,5 @@
-﻿using UrlShortener.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using UrlShortener.Model;
 
 namespace UrlShortener.Interfaces
 {
@@ -11,5 +12,8 @@ namespace UrlShortener.Interfaces
         public Task Update(User user);
 
         public Task<User> GetToken(string token);
+
+        public Task<User> GetUserById(string id);
+        
     }
 }

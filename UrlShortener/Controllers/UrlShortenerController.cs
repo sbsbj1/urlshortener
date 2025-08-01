@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using UrlShortener.Interfaces;
 using UrlShortener.Model;
@@ -9,6 +10,7 @@ namespace UrlShortener.Controllers
 {
     [Route("/")]
     [ApiController]
+    [Authorize]
     public class UrlShortenerController : Controller
     {
 
@@ -52,6 +54,19 @@ namespace UrlShortener.Controllers
             return Ok(urlItem);
         }
 
+        //:GETALL
+        [HttpGet("all")]
+        public async Task<ActionResult<List<UrlModel>>> GetAllUrl()   
+        {
+            var userId = HttpContext.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+            var urls = await _urlService.GetAllUrlById(userId);
+            if (urls == null)
+            {
+                return NotFound("Ha ocurrido un error");
+            }
+            return Ok(urls);
+        }
+
         //:GET REDIRECT
         [HttpGet("{key}")]
         public async Task<IActionResult> Redirect(string key)
@@ -71,14 +86,18 @@ namespace UrlShortener.Controllers
         [HttpDelete("{key}")]
         public async Task<IActionResult> Delete(string key)
         {
-
-            var dbShortUrl = await _urlService.GetUrl(key);
-            if(dbShortUrl != null)
+            var userId = HttpContext.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
             {
-                await _urlService.DeleteUrl(key);
-                return Ok("Url deleted");
+                return Unauthorized();
             }
-            return NotFound("Url doesn't exist");
+            var result = await _urlService.DeleteUrl(key, userId);
+            if(result == false)
+            {
+                return NotFound("No se pudo encontrar la URL");
+            }
+            return Ok("Url Eliminada");
+
 
         }
 
